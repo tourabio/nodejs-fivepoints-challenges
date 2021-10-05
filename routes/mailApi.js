@@ -15,8 +15,8 @@ router.post(
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'mohamedsayed.tourabi.fivepoints@gmail.com',
-        pass: '1ering12345',
+        user: process.env.EMAIL,
+        pass: process.env.EMAIL_PASSWORD,
       },
     })
     // 2. create mail options
@@ -39,8 +39,8 @@ router.post(
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'mohamedsayed.tourabi.fivepoints@gmail.com',
-        pass: '1ering12345',
+        user: process.env.EMAIL,
+        pass: process.env.EMAIL_PASSWORD,
       },
     })
     // 2. create mail options
@@ -63,8 +63,8 @@ router.post(
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'mohamedsayed.tourabi.fivepoints@gmail.com',
-        pass: '1ering12345',
+        user: process.env.EMAIL,
+        pass: process.env.EMAIL_PASSWORD,
       },
     })
     // 2. load HTML template
@@ -96,8 +96,8 @@ router.post(
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'mohamedsayed.tourabi.fivepoints@gmail.com',
-        pass: '1ering12345',
+        user: process.env.EMAIL,
+        pass: process.env.EMAIL_PASSWORD,
       },
     })
     // 2. create mail options
